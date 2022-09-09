@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.product,.cart{
+    background: #a5a2a2;
+    display: flex;
+    padding: 20px 10px;
+    color: #fff;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-weight: 600;
+    align-items: center;
+    margin: 10px;
+    
+}
+.model{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.product-model, .cart-model{
+  border: 5px solid #a5a2a2;
+  margin-right: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.incButton button{
+  background-color: #08babf;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  width: 20px;
+  display: block;
+  height: 20px;
+  cursor: pointer;
+}
+
+.incButton{
+  display: flex;
+    flex-direction: row;
+}
+.incButton input[type=text]{
+  background-color: #08babf;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  width: 25px;
+    text-align: center;
+  }
+
+@media screen and (max-width:480px){
+  .product{
+    flex-direction: column;
+  }
+}
